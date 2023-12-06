@@ -813,7 +813,74 @@
 				system("cls");
 			}
  			break;
- 	
+ 		case(3):
+ 			cout<<"En este apartado se hablar"<<char(160)<<" un poco acerca de la forma en la que est"<<char(160)<<" dise"<<char(164)<<"ado el juego."<<endl;
+ 			cout<<"Para hacer el programa se utilizaron diversas funciones encontradas en internet, esto demuestra la gran importancia de la inform"<<char(160)<<"tica";
+ 			cout<<"y la programaci"<<char(162)<<"n, incluso cuando se usa para aprender a programar, por otro lado, absolutamente todo en el juego est"<<char(160)<<" hecho";
+ 			cout<<"utilizando alietoriedad en un rango definido, por ejemplo: \n1.La dificultad cambia el rango aleatorio para la popularidad del adversario y el costo de tus animales.";
+ 			cout<<"\n2.Los animales preferidos de los ni"<<char(164)<<"os son escogidos de forma aleatoria y la puntuaci"<<char(162)<<"n funciona con una formula que se puede encontrar";
+ 			cout<<"de la linea 740 a 764."<<endl;
+ 			cout<<"fue dif"<<char(161)<<"cil realizar el trabajo hasta que me tom"<<char(130)<<" el tiempo de hacer un diagrama de flujo, por lo cual comprend"<<char()<<"la importancia";
+ 			cout<<" que toma un diagrama de flujo cuando dejamos de crear programas sumamente b"<<char(160)<<"sicos."<<endl;
+ 			cout<<"Sin m"<<char(160)<<"s por el momento espero que disfrute el proyecto.\n"<<endl;
+ 			cout<<"Que deseas hacer? \n 1.cerrar el juego \t\t 2.volver al menu"<<endl;
+ 			cin>>desicion2_2;
+ 			if(desicion2_2==1){
+ 				cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 				cin>>comfir2;
+ 				if(comfir2==1)
+				{
+ 					comeback1=0;
+				}
+				else{
+					system("cls");
+				}
+			}
+			else{
+				system("cls");
+			}
+ 			break;
+ 		case(4):
+ 			//poner aqui la imagen a puntos
+ 			system ("cls");
+ 			cout<<"BIENVENIDO A:"<<endl;
+ 			cout<<" xxxxxxxxx   xxxx       xxxx             x         xxxx        xxxxx     xxxxxxx   xxxxx"<<endl;
+			cout<<"        x   x    x     x    x            x        x    x      x     xx      x     x"<<endl;
+			cout<<"       x   x      x   x      x           x       x      x    x       xx     x    x"<<endl;
+			cout<<"      x   x        x x        x          x      x        x  x               x   x"<<endl;
+			cout<<"     x    x        x x        x  xxxxxx  x      x        x  x    xxxxxx     x   x"<<endl;
+			cout<<"    x     x        x x        x          x      x        x  x         x     x   x"<<endl;
+			cout<<"   x       x      x   x      x           x       x      x    xx      xx     x    x"<<endl;
+			cout<<"  x         x    x     x    x            x        x    x      xx    xx      x     x"<<endl;
+			cout<<" xxxxxxxxx   xxxx       xxxx             xxxxxxx   xxxx        xxxxxx    xxxxxxx   xxxxx"<<endl;
+ 			cout<<"\nQue deseas hacer? \n 1.cerrar el juego \t\t 2.volver al menu"<<endl;
+ 			cin>>desicion2_2;
+ 			if(desicion2_2==1){
+ 				cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 				cin>>comfir2;
+ 				if(comfir2==1)
+				{
+ 					comeback1=0;
+				}
+				else{
+					system("cls");
+				}
+			}
+			else{
+				system("cls");
+			}
+			break;
+ 		case(5):
+ 			cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 				cin>>comfir2;
+ 				if(comfir2==1)
+				{
+ 					comeback1=0;
+				}
+				else{
+					system("cls");
+				}
+			break;
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
