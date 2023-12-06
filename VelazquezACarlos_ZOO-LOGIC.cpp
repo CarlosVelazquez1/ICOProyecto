@@ -617,7 +617,129 @@
 						}
 					}
 				}
+				system("cls");
+				while(comeback6==1){
+					cout<<"\t\t\t\tDIA 5"<<endl;
+					cout<<"Despu"<<char(130)<<"s del dia anterior te sientes con la confianza suficiente como para ir a comprar al elefante";
+					cout<<" as"<<char(161)<<" que decides buscar cual es el mejor lugar para comprarlo, despu"<<char(130)<<"s de haber buscado por un rato encontraste las siguientes opciones:"<<endl;
+					cout<<"Qu"<<char(130)<<" prefieres hacer?\n"<<endl;
 				
+					cout<<"1.Comprar el elefante chino que cuesta "<<elef1<<" monedas"<<endl;
+					cout<<"2.Comprar el elefante sirio cuesta "<<elef2<<" monedas"<<endl;
+					cout<<"3.Comprar el elefante cartagines que cuesta "<<elef3<<" monedas"<<endl;
+					cout<<"4.No comprar ninguno"<<endl; 
+					cout<<"5. Salir del juego"<<endl;
+
+					cin>>eleccion5;
+					switch(eleccion5){
+						case(1):
+							if(monedas-elef1>=0){
+								monedas=monedas-elef1;
+								cout<<"decidiste comprar el oso pardo con un costo de "<<elef1<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+								if(0<eleccion5 && eleccion5<6){
+								comeback6=0;}
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione ENTER para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+								comeback6=1;
+							}
+							break;
+						case(2):
+							if(monedas-elef2>=0){
+								monedas=monedas-elef2;
+								cout<<"decidiste comprar el oso negro con un costo de "<<elef2<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+								if(0<eleccion5 && eleccion5<6){
+								comeback6=0;}
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(3):
+							if(monedas-elef3>=0){
+								monedas=monedas-elef3;
+								cout<<"decidiste comprar el oso malayo con un costo de "<<elef3<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+								if(0<eleccion5 && eleccion5<6){
+								comeback6=0;}
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(4):
+							cout<<"Haz decidido no comprar nada, por lo que seguir"<<char(160)<<"s teniendo "<<monedas<<" monedas"<<endl;
+							cout<<"Presiona ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							if(0<eleccion5 && eleccion5<6){
+							comeback6=0;}
+							break;
+						case(5):
+							cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 							cin>>comfir2;
+ 							if(comfir2==1)
+							{
+ 								exit(0);
+							}
+							else{
+								system("cls");
+							}
+							break;
+						default:
+							cout<<"Esta opci"<<char(162)<<"n no existe, favor de elegir una que si exista."<<endl;
+							cout<<"Presione ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							system("cls");
+						}//fin del swtich opciones elefante
+						
+					
+					}//fin del while 6
+				//aqui continua la historia
+				if(eleccion5==1){
+					nos1=nos1+1;
+				}
+				else{
+					if(eleccion5==2){
+						nos2=nos2+1;
+					}
+					else{
+						if(eleccion5==3){
+							nos3=nos3+1;
+						}
+					}
+				}
+				
+			
+				
+				system("cls");
 
 
  			break;
@@ -641,7 +763,7 @@
 				system("cls");
 			}
  			break;
- 	
+ 		
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
