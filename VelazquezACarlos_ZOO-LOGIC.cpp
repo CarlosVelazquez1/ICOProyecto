@@ -737,11 +737,61 @@
 					}
 				}
 				
-			
+				switch(ninos){
+					case(1):
+						pun2=rand()%2000;
+						pun2=nos2*pun2;
+						pun3=rand()%2000;
+						pun3=nos3*pun3;
+						pun1=nos1*2000;
+						famapropia=pun1+pun2+pun3;
+						break;
+					case(2):
+						pun1=rand()%2000;
+						pun1=nos1*pun1;
+						pun3=rand()%2000;
+						pun3=nos3*pun3;
+						pun2=nos2*2000;
+						famapropia=pun1+pun2+pun3;
+						break;
+					case(3):
+						pun2=rand()%2000;
+						pun2=nos2*pun2;
+						pun1=rand()%2000;
+						pun1=nos1*pun1;
+						pun3=nos3*2000;
+						famapropia=pun1+pun2+pun3;
+						break;			
+										
+				}
 				
 				system("cls");
 
 
+				cout<<"lleg"<<char(162)<<" el d"<<char(161)<<"a en que deb"<<char(161)<<"an cumplir la apuesta, llegaron 10000 ni"<<char(164)<<"os de 20";
+				cout<<" escuelas diferentes y votaron por su zool"<<char(162)<<"gico favorito."<<endl;
+				cout<<"Despu"<<char(130)<<"s de las votaciones, se sabe que el zool"<<char(162)<<"gico de tu amigo le gust"<<char(162)<<" a "<<famarival<<" ni"<<char(164)<<"os de ";
+				cout<<"10000 mientras que la tuya le gust"<<char(162)<<" a..."<<endl;
+				
+				cout<<"presione ENTER para ver el resultado"<<endl;
+
+				cin.get();
+				cout<<"vuelva a presionar ENTER"<<endl;
+				cin.get();
+				cout<<"ya casi, vuelve a presionar ENTER"<<endl;
+				cin.get();
+				cout<<famapropia<<" de 10000 ni"<<char(164)<<"os les gust"<<char(162)<<" tu zool"<<char(162)<<"gico"<<endl;
+				if(famarival<famapropia){
+					cout<<"felicidades!! GANASTE!! :D" <<endl;
+				}
+				else{
+					cout<<"perdiste por "<<famarival-famapropia<<" puntos D: \nMejor suerte para la proxima :D\nSe te recomienda leer el apartado de cosas a valorar para entender mejor las mec"<<char(160)<<"nicas del juego"<<endl;
+				}
+				cout<<"Presiona ENTER para salir del juego"<<endl;
+				cin.get();
+				exit(0);
+				
+				
  			break;
  			
  		case(2):
@@ -763,7 +813,7 @@
 				system("cls");
 			}
  			break;
- 		
+ 	
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
