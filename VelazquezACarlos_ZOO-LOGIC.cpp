@@ -507,7 +507,119 @@
 					}
 				}
 				system("cls");
+				while(comeback5==1){
+					cout<<"\t\t\t\tDIA 4"<<endl;
+					cout<<"Despu"<<char(130)<<"s del dia anterior te sientes con la confianza suficiente como para ir a comprar al mono";
+					cout<<" as"<<char(161)<<" que decides buscar cual es el mejor lugar para comprarlo, despu"<<char(130)<<"s de haber buscado por un rato encontraste las siguientes opciones:"<<endl;
+					cout<<"Qu"<<char(130)<<" prefieres hacer?\n"<<endl;
 				
+					cout<<"1.Comprar el mono capuchino que cuesta "<<mono1<<" monedas"<<endl;
+					cout<<"2.Comprar el mono babuino cuesta "<<mono2<<" monedas"<<endl;
+					cout<<"3.Comprar el mono araña que cuesta "<<mono3<<" monedas"<<endl;
+					cout<<"4.No comprar ninguno"<<endl; 
+					cout<<"5. Salir del juego"<<endl;
+
+					cin>>eleccion4;
+					switch(eleccion4){
+						case(1):
+							if(monedas-mono1>=0){
+								monedas=monedas-mono1;
+								cout<<"decidiste comprar el oso pardo con un costo de "<<mono1<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione ENTER para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(2):
+							if(monedas-mono2>=0){
+								monedas=monedas-mono2;
+								cout<<"decidiste comprar el oso negro con un costo de "<<mono2<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(3):
+							if(monedas-mono3>=0){
+								monedas=monedas-mono3;
+								cout<<"decidiste comprar el oso malayo con un costo de "<<mono3<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(4):
+							cout<<"Haz decidido no comprar nada, por lo que seguir"<<char(160)<<"s teniendo "<<monedas<<" monedas"<<endl;
+							cout<<"Presiona ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							break;
+						case(5):
+							cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 							cin>>comfir2;
+ 							if(comfir2==1)
+							{
+ 								exit(0);
+							}
+							else{
+								system("cls");
+							}
+							break;
+						default:
+							cout<<"Esta opci"<<char(162)<<"n no existe, favor de elegir una que si exista."<<endl;
+							cout<<"Presione ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							system("cls");
+						}//fin del swtich opciones mono
+						if(0<eleccion4 && eleccion4<6){
+							comeback5=0;
+						}
+					}//fin del while 5
+				//aqui comienza la última parte
+				if(eleccion4==1){
+					nos1=nos1+1;
+				}
+				else{
+					if(eleccion4==2){
+						nos2=nos2+1;
+					}
+					else{
+						if(eleccion4==3){
+							nos3=nos3+1;
+						}
+					}
+				}
+				
+
+
  			break;
  			
  		case(2):
@@ -529,7 +641,7 @@
 				system("cls");
 			}
  			break;
-
+ 	
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
