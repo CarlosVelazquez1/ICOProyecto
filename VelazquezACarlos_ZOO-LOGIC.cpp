@@ -87,8 +87,7 @@
 				system("cls");
 			}
  			break;
- 		
-
+ 	
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
