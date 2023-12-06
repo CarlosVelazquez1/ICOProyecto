@@ -117,6 +117,62 @@
 				cout<<"Presiona la tecla ENTER para continuar"<<endl;
 				cin.get();
 				system("cls");
+				//switch de dificultad y posterior el while no2
+				switch(dif){
+				
+					case(1):
+						leon1=rand()%801;
+						leon2=rand()%801;
+						leon3=rand()%801;
+						jirafa1=rand()%801;
+						jirafa2=rand()%801;
+						jirafa3=rand()%801;
+						oso1=rand()%801;
+						oso2=rand()%801;
+						oso3=rand()%801;
+						mono1=rand()%801;
+						mono2=rand()%801;
+						mono3=rand()%801;
+						elef1=rand()%801;
+						elef2=rand()%801;
+						elef3=rand()%801;
+						break;
+					case(2):
+						leon1=600+rand()%(851-600);
+						leon2=600+rand()%(851-600);
+						leon3=600+rand()%(851-600);
+						jirafa1=600+rand()%(851-600);
+						jirafa2=600+rand()%(851-600);
+						jirafa3=600+rand()%(851-600);
+						oso1=600+rand()%(851-600);
+						oso2=600+rand()%(851-600);
+						oso3=600+rand()%(851-600);
+						mono1=600+rand()%(851-600);
+						mono2=600+rand()%(851-600);
+						mono3=600+rand()%(851-600);
+						elef1=600+rand()%(851-600);
+						elef2=600+rand()%(851-600);
+						elef3=600+rand()%(851-600);
+						break;
+					case(3):
+						leon1=600+rand()%(1001-600);
+						leon2=600+rand()%(1001-600);
+						leon3=600+rand()%(1001-600);
+						jirafa1=600+rand()%(1001-600);
+						jirafa2=600+rand()%(1001-600);
+						jirafa3=600+rand()%(1001-600);
+						oso1=600+rand()%(1001-600);
+						oso2=600+rand()%(1001-600);
+						oso3=600+rand()%(1001-600);
+						mono1=600+rand()%(1001-600);
+						mono2=600+rand()%(1001-600);
+						mono3=600+rand()%(1001-600);
+						elef1=600+rand()%(1001-600);
+						elef2=600+rand()%(1001-600);
+						elef3=600+rand()%(1001-600);
+						break;
+					}
+				
 				
  			break;
  			
