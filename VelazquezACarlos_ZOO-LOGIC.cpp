@@ -172,7 +172,120 @@
 						elef3=600+rand()%(1001-600);
 						break;
 					}
+				while(comeback2==1){
 				
+					cout<<"\t\t\t\t\t\tDIA 1"<<endl;
+					cout<<"Has agarrado tus 4000 monedas ahorradas, saliste de tu casa y has pensado que es una buena idea ir a comprar al Le"<<char(162)<<"n en este gran y maravilloso d"<<char(161)<<"a";
+					cout<<" y decides buscar cu"<<char(130)<<"l es el mejor lugar para comprarlo, despu"<<char(130)<<"s de haber buscado por un rato encontr"<<char(162)<<" las siguientes opciones:"<<endl;
+					cout<<"(Toma en cuenta que la raza de los animales pueden cambiar la popularidad que van a tener el d"<<char(161)<<"a de la apuesta)"<<endl;
+				
+					cout<<"1.Le"<<char(162)<<"n de "<<char(181)<<"frica y cuesta "<<leon1<<" monedas"<<endl;
+					cout<<"2.Le"<<char(162)<<"n de Katanga y cuesta "<<leon2<<" monedas"<<endl;
+					cout<<"3.Le"<<char(162)<<"n del Congo y cuesta "<<leon3<<" monedas"<<endl;
+					cout<<"4.No comprar ninguno"<<endl; 
+					cout<<"5. Salir del juego"<<endl;
+					cout<<"Cu"<<char(160)<<"l opci"<<char(162)<<"n eliges?"<<endl;
+					cin>>eleccion1;
+					switch(eleccion1){
+						case(1):
+							if(monedas-leon1>=0){
+								monedas=monedas-leon1;
+								cout<<"decidiste comprar el le"<<char(162)<<"n de "<<char(181)<<"frica con un costo de "<<leon1<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presione ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(2):
+							if(monedas-leon2>=0){
+								monedas=monedas-leon2;
+								cout<<"decidiste comprar el le"<<char(162)<<"n de Katanga con un costo de "<<leon2<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presione ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(3):
+							if(monedas-leon3>=0){
+								monedas=monedas-leon3;
+								cout<<"decidiste comprar el le"<<char(162)<<"n del Congo con un costo de "<<leon3<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presione ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(4):
+							cout<<"Haz decidido no comprar nada, por lo que seguir"<<char(160)<<"s teniendo "<<monedas<<" monedas"<<endl;
+							cout<<"Presiona ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							break;
+						case(5):
+							cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 							cin>>comfir2;
+ 							if(comfir2==1)
+							{
+ 								exit(0);
+							}
+							else{
+								system("cls");
+							}
+							break;
+						default:
+							cout<<"Esta opci"<<char(162)<<"n no existe, favor de elegir una que si exista."<<endl;
+							cout<<"Presione ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							system("cls");
+							
+				}//fin del switch opciones leon
+				if(0<eleccion1 && eleccion1<6){
+					comeback2=0;
+				}
+			}//fin del while no2
+				//aqui sigue el codigo para la opcion 2
+				if(eleccion1==1){
+					nos1=nos1+1;
+				}
+				else{
+					if(eleccion1==2){
+						nos2=nos2+1;
+					}
+					else{
+						if(eleccion1==3){
+							nos3=nos3+1;
+						}
+					}
+				}
+				
+				system("cls");
+			
 				
  			break;
  			
@@ -195,7 +308,7 @@
 				system("cls");
 			}
  			break;
- 		
+
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
