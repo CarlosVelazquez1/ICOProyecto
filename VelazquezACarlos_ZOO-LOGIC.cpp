@@ -285,6 +285,117 @@
 				}
 				
 				system("cls");
+				while(comeback3==1){
+					cout<<"\t\t\t\tDIA 2"<<endl;
+					cout<<"Despu"<<char(130)<<"s del dia anterior te sientes con la confianza suficiente como para ir a comprar a la jirafa";
+					cout<<" as"<<char(161)<<" que decides buscar cual es el mejor lugar para comprarla, despu"<<char(130)<<"s de haber buscado por un rato encontr"<<char(162)<<" las siguientes opciones:"<<endl;
+					cout<<"Qu"<<char(130)<<" prefieres hacer?\n"<<endl;
+				
+					cout<<"1.Comprar la jirafa del norte que cuesta "<<jirafa1<<" monedas"<<endl;
+					cout<<"2.Comprar la jirafa reticulada que cuesta "<<jirafa2<<" monedas"<<endl;
+					cout<<"3.Comprar la jirafa del masai que cuesta "<<jirafa3<<" monedas"<<endl;
+					cout<<"4.No comprar ninguno"<<endl; 
+					cout<<"5. Salir del juego"<<endl;
+
+					cin>>eleccion2;
+					switch(eleccion2){
+						case(1):
+							if(monedas-jirafa1>=0){
+								monedas=monedas-jirafa1;
+								cout<<"decidiste comprar la jirafa del norte con un costo de "<<jirafa1<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione ENTER para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(2):
+							if(monedas-jirafa2>=0){
+								monedas=monedas-jirafa2;
+								cout<<"decidiste comprar la jirada reticulada con un costo de "<<jirafa2<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(3):
+							if(monedas-jirafa3>=0){
+								monedas=monedas-jirafa3;
+								cout<<"decidiste comprar la jirafa del Masai con un costo de "<<jirafa3<<" monedas"<<endl;
+								cout<<"Actualmente te quedan "<<monedas<<" monedas"<<endl;
+								cout<<"Presiona ENTER para continuar"<<endl;
+								cin.ignore();
+								cin.get();
+							
+							}
+							else{
+								cout<<"no tiene suficientes monedas para realizar esta compra, de favor elija otra opci"<<char(162)<<"n"<<endl;
+								cout<<"Presione espacio para regresar y elegir otra opci"<<char(162)<<"n"<<endl;
+								cin.ignore();
+								cin.get();
+								system("cls");
+							}
+							break;
+						case(4):
+							cout<<"Haz decidido no comprar nada, por lo que seguir"<<char(160)<<"s teniendo "<<monedas<<" monedas"<<endl;
+							cout<<"Presiona ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							break;
+						case(5):
+							cout<<"esta seguro de que desea cerrar el juego?\n 1.Si\t\t\t2.No"<<endl;
+ 							cin>>comfir2;
+ 							if(comfir2==1)
+							{
+ 								exit(0);
+							}
+							else{
+								system("cls");
+							}
+							break;
+						default:
+							cout<<"Esta opci"<<char(162)<<"n no existe, favor de elegir una que si exista."<<endl;
+							cout<<"Presione ENTER para continuar"<<endl;
+							cin.ignore();
+							cin.get();
+							system("cls");
+						}//fin del swtich opciones jirafa+
+						if(0<eleccion2 && eleccion2<6){
+							comeback3=0;
+						}
+					}//fin del while3
+						//aqui comienza el dia 3
+					if(eleccion2==1){
+					nos1=nos1+1;
+					}
+					else{
+					if(eleccion2==2){
+						nos2=nos2+1;
+					}
+					else{
+						if(eleccion2==3){
+							nos3=nos3+1;
+						}
+					}
+					}
+				system("cls");
 			
 				
  			break;
@@ -308,7 +419,6 @@
 				system("cls");
 			}
  			break;
-
 		default:
 			cout<<"usted ha introducido un dato no valido para el sistema, se le recomienda poner el numero que esta antes de una opcion que si exista, presione ENTER para volver"<<endl;
 			cin.ignore();
